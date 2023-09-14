@@ -1,0 +1,14 @@
+$fontstack:'Mukta',
+sans-serif;
+$fontbody: 'Mukta',
+sans-serif;
+$colordefault: #323246;
+$colorblue: #323246;
+$colorpink: #A4849C;
+$colororange: #323246;
+
+@mixin transition($second) {
+  -webkit-transition: all $second ease-in-out;
+  -moz-transition: all $second ease-in-out;
+  transition: all $second ease-in-out;
+}
