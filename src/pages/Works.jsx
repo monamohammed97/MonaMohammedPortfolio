@@ -9,7 +9,7 @@ function Works() {
   }, []);
   return (
     <Layout2>
-      <section className="shadow-blue white-bg padding mt-0">
+      <section className="shadow-blue white-bg padding mt-0 min-100">
         <SectionHeading title="Portfolio" />
         <Portfolios2 />
       </section>

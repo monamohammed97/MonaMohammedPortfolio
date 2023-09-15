@@ -176,7 +176,7 @@ function Contact() {
         </form>
         {handleAlerts()}
       </div>
-      <div className="footer mt-auto">
+      <div className="footer mt-auto d-block d-lg-none">
         <ul className="social-icons list-inline">
           {!headerData.social.facebook ? null : (
             <li className="list-inline-item">

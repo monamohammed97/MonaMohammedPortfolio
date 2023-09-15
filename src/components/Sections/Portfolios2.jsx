@@ -29,63 +29,133 @@ const allData = [
     id: 1,
     name: "dashboards email templates",
     category: ["dashboards"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/hudaUniversity/home.png",
     slug: "dashboards-email templates",
   },
   {
     id: 2,
     name: "Apple USB",
     category: ["dashboards", "landing pages"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/menu/home.png",
     slug: "apple-usb",
   },
   {
     id: 3,
     name: "Work Space",
     category: ["websites"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/menu1/home.png",
     slug: "work-space",
   },
   {
     id: 4,
     name: "dashboards Bulb",
     category: ["dashboards"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/moaql/home.png",
     slug: "dashboards-bulb",
   },
   {
     id: 5,
     name: "Iphone 8",
     category: ["websites", "email templates"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/movie/home.png",
     slug: "iphone-8",
   },
   {
     id: 6,
     name: "Minimal email templates",
     category: ["landing pages", "dashboards"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/todo/home.png",
     slug: "minimal-email templates",
   },
   {
     id: 7,
     name: "dashboards email templates",
     category: ["dashboards"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/ecommercial/home.png",
     slug: "dashboards-email templates",
   },
   {
     id: 8,
     name: "Apple USB",
     category: ["dashboards", "landing pages"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/kaitos/home.png",
     slug: "apple-usb",
   },
   {
     id: 9,
     name: "Work Space",
     category: ["websites"],
-    image: "images/hudaUniversity/img2.png",
+    image: "images/vinay/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 10,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/kaitos/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 11,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/product/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 12,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/lawyer/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 13,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/trPay/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 14,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/trPayAdmin/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 15,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/website/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 16,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/ajyal/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 17,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/dashboardLearn/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 18,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/education/home.png",
+    slug: "work-space",
+  },
+  {
+    id: 19,
+    name: "Work Space",
+    category: ["websites"],
+    image: "images/educationDash/home.png",
     slug: "work-space",
   },
 ];
@@ -104,14 +174,13 @@ function Portfolios2() {
   }, [getAllItems]);
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     e.preventDefault();
 
     let targetFilter = e.target.value
       ? e.target.value.toLowerCase()
       : e.target.textContent.toLowerCase();
     setActiveFilter(targetFilter);
-
+    setDataVisibleCount(6);
     let tempData;
     if (targetFilter === filters[0].name.toLowerCase()) {
       tempData = getAllItems.filter((data) => data.id <= dataVisibleCount);

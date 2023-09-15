@@ -32,7 +32,7 @@ function Header({ toggleHeader, toggleHandler }) {
         <NavLink to="/" className="site-title dot ml-2">
           {headerData.name}
         </NavLink>
-        <NavLink to="/" className="logo">
+        <NavLink to="/" className="logo d-block d-sm-none">
           <img src={headerData.imageThumb} alt={headerData.name} />
         </NavLink>
         <nav>
@@ -79,13 +79,13 @@ function Header({ toggleHeader, toggleHandler }) {
         }
       >
         <div className="header-inner d-flex align-items-start flex-column">
-          <div class="wrapper">
+          <NavLink to="/"  class="wrapper">
             <svg className="header">
               <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                 M
               </text>
             </svg>
-          </div>
+          </NavLink>
 
           <nav>
             <ul className="vertical-menu scrollspy">
