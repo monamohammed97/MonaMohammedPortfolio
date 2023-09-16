@@ -271,6 +271,7 @@ section {
   [class*="col-"] {
     margin-top: 10px;
     margin-bottom: 10px;
+    min-height: 200px;
   }
 }
 
@@ -282,6 +283,9 @@ section {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  background-color: #A4849C;
+  min-height: 200px;
+
   @include transition(0.3s);
 
   .thumb {
@@ -875,6 +879,7 @@ svg.header text {
 .image {
   border-radius: 16px;
 }
-.min-100{
+
+.min-100 {
   min-height: 100vh;
 }

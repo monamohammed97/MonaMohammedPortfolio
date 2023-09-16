@@ -11,7 +11,7 @@ function Portfolio({ portfolio: { id, name, category, image, slug } }) {
         </div>
         <span className="plus-icon">+</span>
         <div className="thumb">
-          <img src={image} alt={name} />
+          <img src={image} alt={name} loading="lazy" />
           <div className="mask"></div>
         </div>
       </div>

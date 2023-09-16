@@ -82,7 +82,7 @@ function Contact() {
   return (
     <div className="row">
       <div className="col-md-4 mb-4 mb-md-0">
-        <div className="contact-info mb-3 mb-md-5">
+        <div className="contact-info fadeIn delay_ms_3 mb-3 mb-md-5">
           <i className="icon-phone"></i>
           <div className="details">
             <h5>Phone</h5>
@@ -91,7 +91,7 @@ function Contact() {
             ))}
           </div>
         </div>
-        <div className="contact-info mb-3 mb-md-5">
+        <div className="contact-info fadeIn delay_ms_5 mb-3 mb-md-5">
           <i className="icon-envelope"></i>
           <div className="details">
             <h5>Email address</h5>
@@ -100,7 +100,7 @@ function Contact() {
             ))}
           </div>
         </div>
-        <div className="contact-info">
+        <div className="contact-info fadeIn delay_ms_7">
           <i className="icon-location-pin"></i>
           <div className="details">
             <h5>Location</h5>
@@ -112,7 +112,7 @@ function Contact() {
       <div className="col-md-8">
         <form className="contact-form" ref={form} onSubmit={submitHandler}>
           <div className="row">
-            <div className="column col-md-6">
+            <div className="column col-md-6 fadeIn delay_ms_3">
               <div className="form-group">
                 <input
                   type="text"
@@ -125,7 +125,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="column col-md-6">
+            <div className="column col-md-6 fadeIn delay_ms_3">
               <div className="form-group">
                 <input
                   type="email"
@@ -138,7 +138,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="column col-md-12">
+            <div className="column col-md-12 fadeIn delay_ms_5">
               <div className="form-group">
                 <input
                   type="text"
@@ -151,7 +151,7 @@ function Contact() {
               </div>
             </div>
 
-            <div className="column col-md-12">
+            <div className="column col-md-12 fadeIn delay_ms_7">
               <div className="form-group">
                 <textarea
                   name="message"
@@ -169,7 +169,7 @@ function Contact() {
             type="submit"
             name="submit"
             value="Submit"
-            className="btn btn-default"
+            className="btn btn-default fadeIn delay_ms_9"
           >
             <i className="icon-paper-plane"></i>Send Message
           </button>

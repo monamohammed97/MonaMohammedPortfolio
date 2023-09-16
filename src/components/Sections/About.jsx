@@ -17,33 +17,33 @@ const aboutData = {
 function About() {
   return (
     <div className="row">
-      <div className="col-6 col-md-3 ">
+      <div className="col-6 col-md-3 fadeIn delay">
         <img src={aboutData.image} alt={aboutData.name} className="image" />
       </div>
       <div className="col-md-9">
-        <h2 className="mt-4 mt-md-0 mb-4">Hello,</h2>
-        <p className="mb-0">{aboutData.aboutMe}</p>
-        <p className="mb-0">{aboutData.aboutMe1}</p>
-        <p className="mb-0">{aboutData.aboutMe2}</p>
+        <h2 className="mt-4 mt-md-0 mb-4 fadeIn delay">Hello,</h2>
+        <p className="mb-0 fadeIn delay_1">{aboutData.aboutMe}</p>
+        <p className="mb-0 fadeIn delay_3">{aboutData.aboutMe1}</p>
+        <p className="mb-0 fadeIn delay_5">{aboutData.aboutMe2}</p>
         <div className="row my-4">
           <div className="col-md-6">
-            <p className="mb-2">
+            <p className="mb-2 fadeIn delay_7">
               Name: <span className="text-dark">{aboutData.name}</span>
             </p>
-            <p className="mb-0">
+            <p className="mb-0 fadeIn delay_9">
               Birthday: <span className="text-dark">{aboutData.birthday}</span>
             </p>
           </div>
           <div className="col-md-6 mt-2 mt-md-0 mt-sm-2">
-            <p className="mb-2">
+            <p className="mb-2 fadeIn delay_7">
               Location: <span className="text-dark">{aboutData.location}</span>
             </p>
-            <p className="mb-0">
+            <p className="mb-0 fadeIn delay_9">
               Email: <span className="text-dark">{aboutData.email}</span>
             </p>
           </div>
         </div>
-        <a href={aboutData.cvpath} className="btn btn-default mr-3">
+        <a href={aboutData.cvpath} className="btn btn-default mr-3 fadeIn delay_2s">
           <i className="icon-cloud-download"></i>Download CV
         </a>
         {/* <ScrollLink

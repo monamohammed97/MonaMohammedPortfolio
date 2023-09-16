@@ -102,6 +102,22 @@
   animation: 1s ease 0s 1 normal backwards running fadeIn
 }
 
+.delay_ms_3 {
+  animation-delay: .3s;
+}
+
+.delay_ms_5 {
+  animation-delay: .5s;
+}
+
+.delay_ms_7 {
+  animation-delay: .7s;
+}
+
+.delay_ms_9 {
+  animation-delay: .9s;
+}
+
 .delay {
   animation-delay: 1s;
 }
@@ -142,6 +158,10 @@
   animation-delay: 1.9s;
 }
 
+.delay_2s {
+  animation-delay: 2s;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -160,4 +180,45 @@
   to {
     opacity: 1;
   }
+}
+
+.custom-loader {
+  width: 100px;
+  height: 100px;
+  display: grid;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, #a4849c 92%, #0000);
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+
+.custom-loader::before {
+  margin: 4px;
+  filter: hue-rotate(45deg);
+  background-size: 16px 16px;
+  animation-timing-function: linear
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(.5turn)
+  }
+}
+
+.page-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d4c2d0;
 }
