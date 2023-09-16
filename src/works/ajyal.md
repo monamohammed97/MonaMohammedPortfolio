@@ -25,7 +25,7 @@ technologies:
 
 ### Ajyal
 
-![ajyal](/images/ajyal/profile.png)
+![ajyal](images/ajyal/profile.png)
 
 #### Overview
 

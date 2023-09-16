@@ -8,7 +8,7 @@ technologies : ['Bootstarp','jQuery','AOS Library','Email Template']
 
 ### LoBox Landing Page
 
-![LoBox](/images/lobox/profile.png)
+![LoBox](images/lobox/profile.png)
 
 #### Overview
 
