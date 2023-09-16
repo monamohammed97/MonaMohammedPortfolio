@@ -58,11 +58,24 @@ function WorkDetails2(props) {
                 <i className="icon-link"></i> {meta && meta.title}
               </Link>
             </li>
+            {meta?.link2 && (
+              <li className="list-inline-item">
+                <Link
+                  to={{ pathname: meta?.link2 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="icon-link"></i> {meta && meta.title2}
+                </Link>
+              </li>
+            )}
           </ul>
           <Markdown children={content}></Markdown>
-          <ul className="list-unstyled d-flex">
+          <ul className="list-unstyled d-flex flex-wrap">
             {meta?.technologies?.map((el) => (
-              <li className="btn btn-default btn-lg mr-3 technologies">{el}</li>
+              <li className="btn btn-default btn-lg mr-3 technologies mb-2">
+                {el}
+              </li>
             ))}
           </ul>
         </section>
