@@ -31,13 +31,13 @@ const allData = [
     image: "images/rssa/home.jpg",
     slug: "rssa",
   },
-  {
-    id: 2,
-    name: "Crypto Currencies Dashboard ",
-    category: ["dashboards"],
-    image: "images/trPay/home.jpg",
-    slug: "trPayUser",
-  },
+  // {
+  //   id: 2,
+  //   name: "Crypto Currencies Dashboard ",
+  //   category: ["dashboards"],
+  //   image: "images/trPay/home.jpg",
+  //   slug: "trPayUser",
+  // },
   {
     id: 3,
     name: "LoBox",
@@ -262,8 +262,8 @@ function Portfolios2() {
           <li
             className={
               filter.name.toLowerCase() === activeFilter
-                ? "list-inline-item current"
-                : "list-inline-item"
+                ? "list-inline-item mb-2 current"
+                : "list-inline-item mb-2"
             }
             key={filter.id}
             onClick={handleChange}
