@@ -8,7 +8,7 @@ technologies : ['Bootstarp','jQuery','Slick Slider','Convert To Arabic']
 
 ### RSSA, Radiological Society of Saudi Arabia
 
-![RSSA](/images/rssa/profile.png)
+![RSSA](/images/rssa/profile.PNG)
 
 #### Overview
 

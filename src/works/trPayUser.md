@@ -8,7 +8,7 @@ technologies : ['Bootstarp','jQuery','Data Table','Chart.js', 'Responsive Design
 
 ### Crypto Currencies Control Panel/Dashboard Specific to Users
 
-![Crypto Currencies](/images/trPay/profile.png)
+![Crypto Currencies](/images/trPay/profile.PNG)
 
 #### Overview
 

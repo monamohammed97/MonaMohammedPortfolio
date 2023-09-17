@@ -35,7 +35,7 @@ function Herosection() {
             <span className="animation-variation">d</span>
             <span className="dot"></span>
           </h1>
-          <p className="mb-4 fadeIn font-60 delay_5"><span className="fontCinzel">W</span>eb Developer</p>
+          <p className="mb-4 fadeIn font-60 delay_5">Web Developer</p>
           <Link
             activeClass="active"
             to="/works"

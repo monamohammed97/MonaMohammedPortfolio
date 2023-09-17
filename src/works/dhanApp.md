@@ -8,7 +8,7 @@ technologies : ['Bootstarp','jQuery','Chart.js']
 
 ### Dhan App
 
-![Dhan App](/images/vinay/profile.png)
+![Dhan App](/images/vinay/profile.PNG)
 
 #### Overview
 
