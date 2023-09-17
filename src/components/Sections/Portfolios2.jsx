@@ -72,10 +72,10 @@ const allData = [
   },
   {
     id: 7,
-    name: "Yalla App",
-    category: ["landing pages"],
-    image: "images/menu/home.jpg",
-    slug: "yalla",
+    name: "Email",
+    category: ["email templates"],
+    image: "images/email1/home.jpg",
+    slug: "email1",
   },
   {
     id: 8,
@@ -121,10 +121,10 @@ const allData = [
   },
   {
     id: 14,
-    name: "Pringo",
-    category: ["websites"],
-    image: "images/website/home.jpg",
-    slug: "pringo",
+    name: "Yalla App",
+    category: ["landing pages"],
+    image: "images/menu/home.jpg",
+    slug: "yalla",
   },
   {
     id: 15,
@@ -182,6 +182,20 @@ const allData = [
     image: "images/menu1/home.jpg",
     slug: "menu",
   },
+  {
+    id: 23,
+    name: "Pringo",
+    category: ["websites"],
+    image: "images/website/home.jpg",
+    slug: "pringo",
+  },
+  {
+    id: 24,
+    name: "Email",
+    category: ["email templates"],
+    image: "images/email2/home.jpg",
+    slug: "email2",
+  },
 ];
 
 function Portfolios2() {
@@ -216,20 +230,21 @@ function Portfolios2() {
       });
     }
     let dataFilter =
-      (targetFilter != targetFilter) === filters[0].name.toLowerCase()
+      targetFilter !== filters[0].name.toLowerCase()
         ? allData.filter((data) => {
+          console.log(targetFilter);
             return (
               data.category.includes(targetFilter) &&
               data.id <= allData?.length - 1
             );
           })
         : getAllItems.filter((data) => data.id <= dataVisibleCount);
-    console.log(dataFilter, tempData);
-    if (dataFilter?.length < 8 || tempData?.length == 0) {
-      setNoMorePost(true);
-    } else {
-      setNoMorePost(false);
-    }
+    // console.log(dataFilter, tempData);
+    // if (dataFilter?.length < 8 || tempData?.length == 0) {
+    //   setNoMorePost(true);
+    // } else {
+    //   setNoMorePost(false);
+    // }
     setVisibleItems(tempData);
   };
 
