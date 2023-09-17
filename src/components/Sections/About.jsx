@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 const aboutData = {
   cvpath: "media/Mona_Mohammed_Shaban__.CV.pdf",
-  image: "images/monaM.JPG",
+  image: "images/image.PNG",
   name: "Mona Mohammed",
   location: "Palestine, Rafah",
   birthday: "30 Dec, 1997",
@@ -17,10 +17,10 @@ const aboutData = {
 function About() {
   return (
     <div className="row">
-      {/* <div className="col-6 col-md-3 fadeIn delay">
+      <div className="col-6 col-md-3 fadeIn delay">
         <img src={aboutData.image} alt={aboutData.name} className="image" />
-      </div> */}
-      <div className="">
+      </div>
+      <div className="col-md-9">
         <h2 className="mt-4 mt-md-0 mb-4 fadeIn delay">Hello,</h2>
         <p className="mb-0 fadeIn delay_1">{aboutData.aboutMe}</p>
         <p className="mb-0 fadeIn delay_3">{aboutData.aboutMe1}</p>

@@ -236,6 +236,11 @@
 }
 
 @media only screen and (max-width: 576.98px) {
+  .technologies.btn-default {
+    font-size: 12px;
+    padding: 6px 20px;
+  }
+
   nav {
     li:hover a i {
       opacity: 1 !important;

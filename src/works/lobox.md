@@ -2,8 +2,8 @@
 date: 6 September 2023
 author: Mona Mohammed
 link: https://monamohammed97.github.io/Lob_Box/index.html
-title : LoBox
-technologies : ['Bootstarp','jQuery','AOS Library','Email Template']
+title: LoBox
+technologies: ["Bootstarp", "jQuery", "AOS Library", "Email Template"]
 ---
 
 ### LoBox Landing Page
@@ -12,7 +12,7 @@ technologies : ['Bootstarp','jQuery','AOS Library','Email Template']
 
 #### Overview
 
-Landing Page, 
+Landing Page,
 This project contains the following pages:
 
 1- Homepage
@@ -25,4 +25,4 @@ This project contains the following pages:
 
 5 - Email Templates (3 Templates)
 
-A Landing Page converted from a Figma design to a fully responsive app (perfect pixel) using these technologies: 
+A Landing Page converted from a Figma design to a fully responsive app (perfect pixel) using these technologies:
