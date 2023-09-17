@@ -1,10 +1,10 @@
 ---
-date: 16 July 2023
+date: 26 July 2023
 author: Mona Mohammed
-link: https://dash-saudi.vercel.app/
+link: https://evaro.vercel.app/
 title: Evaro
 technologies:
-  ["Bootstarp", "jQuery", "Slick Slider", "Convert To Arabic", "AOS Library"]
+  ["Bootstarp", "jQuery", "AOS Library"]
 ---
 
 ### Evaro
@@ -12,15 +12,16 @@ technologies:
 ![evaro](/images/evaro/profile.PNG)
 
 #### Overview
-
 The website contains the following pages:
 
-1- Homepage
+1 - Home
 
-2 - About us
+2 - Our Services/ Branding
 
-3 - Driver Registration
+3 - Work
 
-4 - Partner Registration
+4 - Our Story
+
+5 - Let's Talk
 
 A Website converted from a Figma design to a fully responsive app using these technologies:

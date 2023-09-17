@@ -11,7 +11,7 @@ technologies:
     "Next.js",
     "Style-component",
     "axios",
-    "react-dom",
+    "react-router",
     "react-icons",
     "react-redux",
     "redux-thunk",

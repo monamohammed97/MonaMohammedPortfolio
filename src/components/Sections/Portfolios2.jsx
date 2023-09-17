@@ -40,10 +40,10 @@ const allData = [
   },
   {
     id: 3,
-    name: "Work Space",
+    name: "Marathon",
     category: ["landing pages"],
     image: "images/marthon/home.jpg",
-    slug: "work-space",
+    slug: "marthon",
     // name: "LoBox",
     // category: ["landing pages"],
     // image: "images/lobox/home.jpg",
@@ -135,59 +135,52 @@ const allData = [
   },
   {
     id: 16,
-    name: "Work Space",
+    name: "Evaro",
     category: ["websites"],
     image: "images/evaro/home.jpg",
-    slug: "work-space",
+    slug: "evaro",
   },
   {
     id: 17,
-    name: "Work Space",
+    name: "Saudi food & drog authority Dashboard",
     category: ["dashboards"],
     image: "images/product/home.jpg",
-    slug: "work-space",
+    slug: "product",
   },
   {
     id: 18,
-    name: "Work Space",
-    category: ["landing pages"],
-    image: "images/marthon/home.jpg",
-    slug: "work-space",
+    name: "Lawyers Dashborad",
+    category: ["dashboards"],
+    image: "images/lawyer/home.jpg",
+    slug: "lawyer",
   },
   {
     id: 19,
-    name: "Work Space",
-    category: ["dashboards"],
-    image: "images/lawyer/home.jpg",
-    slug: "work-space",
+    name: "ProShop E-commercial",
+    category: ["websites"],
+    image: "images/ecommercial/home.jpg",
+    slug: "ecommercial",
   },
   {
     id: 20,
-    name: "Work Space",
+    name: "Movies App",
     category: ["websites"],
-    image: "images/ecommercial/home.jpg",
-    slug: "work-space",
+    image: "images/movie/home.jpg",
+    slug: "movie",
   },
   {
     id: 21,
-    name: "Work Space",
+    name: "To Do App",
     category: ["websites"],
-    image: "images/movie/home.jpg",
-    slug: "work-space",
+    image: "images/todo/home.jpg",
+    slug: "todo",
   },
   {
     id: 22,
-    name: "Work Space",
-    category: ["websites"],
-    image: "images/todo/home.jpg",
-    slug: "work-space",
-  },
-  {
-    id: 23,
-    name: "Work Space",
+    name: "Menu App",
     category: ["websites"],
     image: "images/menu1/home.jpg",
-    slug: "work-space",
+    slug: "menu",
   },
 ];
 
@@ -222,17 +215,17 @@ function Portfolios2() {
         );
       });
     }
-    // let dataFilter =
-    //   (targetFilter != targetFilter) === filters[0].name.toLowerCase()
-    //     ? allData.filter((data) => {
-    //         return (
-    //           data.category.includes(targetFilter) &&
-    //           data.id <= allData?.length - 1
-    //         );
-    //       })
-    //     : getAllItems.filter((data) => data.id <= dataVisibleCount);
-
-    if (tempData?.length < 8) {
+    let dataFilter =
+      (targetFilter != targetFilter) === filters[0].name.toLowerCase()
+        ? allData.filter((data) => {
+            return (
+              data.category.includes(targetFilter) &&
+              data.id <= allData?.length - 1
+            );
+          })
+        : getAllItems.filter((data) => data.id <= dataVisibleCount);
+    console.log(dataFilter, tempData);
+    if (dataFilter?.length < 8 || tempData?.length == 0) {
       setNoMorePost(true);
     } else {
       setNoMorePost(false);
