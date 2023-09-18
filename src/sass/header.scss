@@ -2,6 +2,12 @@
 /*                      HEADER                              
 /*=================================================================*/
 header {
+
+  .wrapper,
+  .footer {
+    padding: 0 10px;
+  }
+
   &.left {
     color: #fff;
     background: $colorblue;
@@ -30,7 +36,7 @@ header {
       bottom: 0;
       left: 0;
       right: 0;
-      padding: 0 10px;
+      // padding: 0 10px;
       position: absolute;
     }
 
@@ -83,7 +89,7 @@ header {
     color: #fff;
 
     &:hover {
-      color: #fff;
+      color: #A4849C;
       text-decoration: none;
     }
   }
@@ -138,6 +144,9 @@ header {
       a {
         margin-left: 0;
         padding: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
         // @include transition(0.3s);
 
         &:hover {
@@ -149,14 +158,14 @@ header {
           color: #A4849C;
 
           &:before {
-            content: "";
-            background: #A4849C;
-            display: block;
-            height: 18px;
-            left: -10px;
-            top: 10px;
-            position: absolute;
-            width: 3px;
+            // content: "";
+            // background: #A4849C;
+            // display: block;
+            // height: 18px;
+            // left: -10px;
+            // top: 10px;
+            // position: absolute;
+            // width: 3px;
           }
         }
       }
@@ -246,14 +255,15 @@ header {
   }
 }
 
-.home:hover {
+.home a:hover {
   &::before {
     content: '<Home/>';
     position: absolute;
     cursor: pointer;
     font-size: 12px;
-    left: 0;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
   }
 
   .icon-home {
@@ -261,14 +271,15 @@ header {
   }
 }
 
-.about:hover {
+.about a:hover {
   &::before {
     content: '<About/>';
     position: absolute;
     cursor: pointer;
     font-size: 12px;
-    left: 0;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
   }
 
   .icon-user {
@@ -276,14 +287,15 @@ header {
   }
 }
 
-.resume:hover {
+.resume a:hover {
   &::before {
     content: '<Resume/>';
     position: absolute;
     cursor: pointer;
     font-size: 12px;
-    left: 0;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
   }
 
   .icon-graduation {
@@ -291,14 +303,15 @@ header {
   }
 }
 
-.contact:hover {
+.contact a:hover {
   &::before {
     content: '<Contact/>';
     position: absolute;
     cursor: pointer;
     font-size: 12px;
-    left: 0;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
   }
 
   .icon-phone {
@@ -306,17 +319,31 @@ header {
   }
 }
 
-.works:hover {
+.works a:hover {
   &::before {
     content: '<Works/>';
     position: absolute;
     cursor: pointer;
     font-size: 12px;
-    left: 0;
+    left: 50%;
     top: 4px;
+    transform: translateX(-50%);
   }
 
   .icon-grid {
     opacity: 0;
+  }
+}
+
+header li:has(.active) {
+  &:before {
+    content: "";
+    background: #A4849C;
+    display: block;
+    height: 18px;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    width: 3px;
   }
 }
