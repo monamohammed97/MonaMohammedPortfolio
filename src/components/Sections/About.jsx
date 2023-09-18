@@ -2,7 +2,7 @@ import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 const aboutData = {
-  cvpath: "media/Mona_Mohammed_Shaban__.CV.pdf",
+  cvpath: "media/Frontend_Dev_Mona_Shaban.CV.pdf",
   image: "images/image.PNG",
   name: "Mona Mohammed",
   location: "Palestine, Rafah",
