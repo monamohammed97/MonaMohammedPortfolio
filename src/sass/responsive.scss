@@ -203,10 +203,10 @@
     }
   }
 
-  .works,
-  .contact,
-  .about,
-  .home {
+  .works a,
+  .contact a,
+  .about a,
+  .home a {
     &::before {
       display: none;
     }
