@@ -36,31 +36,39 @@ function Contact() {
   const [message, setMessage] = useState("");
   const form = useRef();
   const submitHandler = (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    if (!formdata.name) {
-      setError(true);
-      setMessage("Name is required");
-    } else if (!formdata.email) {
-      setError(true);
-      setMessage("Email is required");
-    } else if (!formdata.subject) {
-      setError(true);
-      setMessage("Subject is required");
-    } else if (!formdata.message) {
-      setError(true);
-      setMessage("Message is required");
-    } else {
-      setError(false);
-      emailjs.sendForm(
+  if (!formdata.name) {
+    setError(true);
+    setMessage("Name is required");
+  } else if (!formdata.email) {
+    setError(true);
+    setMessage("Email is required");
+  } else if (!formdata.subject) {
+    setError(true);
+    setMessage("Subject is required");
+  } else if (!formdata.message) {
+    setError(true);
+    setMessage("Message is required");
+  } else {
+    setError(false);
+    emailjs
+      .sendForm(
         "service_063we7t",
         "template_mkx7gn3",
         form.current,
         "3dx8YeaOh6nkop5dF"
-      );
-      setMessage("You message has been sent!!!");
-    }
-  };
+      )
+      .then(() => {
+        setMessage("Your message has been sent!!!");
+        setFormdata({ name: "", email: "", subject: "", message: "" }); // تفريغ الحقول بعد الإرسال
+      })
+      .catch((error) => {
+        setError(true);
+        setMessage("Failed to send message. Please try again.");
+      });
+  }
+};
 
   const handleChange = (event) => {
     setFormdata({
