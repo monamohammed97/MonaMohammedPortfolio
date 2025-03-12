@@ -26,171 +26,174 @@ const filters = [
 const allData = [
   {
     id: 1,
+    name: "LoBox",
+    category: ["landing pages"],
+    image: "images/lobox/home.jpg",
+    slug: "lobox",
+  },
+  {
+    id: 2,
     name: "RSSA, Radiological Society of Saudi Arabia",
     category: ["websites"],
     image: "images/rssa/home.jpg",
     slug: "rssa",
   },
   {
-    id: 2,
+    id: 3,
     name: "Crypto Currencies Dashboard ",
     category: ["dashboards"],
     image: "images/trPay/home.jpg",
     slug: "trPayUser",
   },
   {
-    id: 3,
+    id: 4,
     name: "Marathon",
     category: ["landing pages"],
     image: "images/marthon/home.jpg",
     slug: "marthon",
-    // name: "LoBox",
-    // category: ["landing pages"],
-    // image: "images/lobox/home.jpg",
-    // slug: "lobox",
   },
   {
-    id: 4,
+    id: 5,
     name: "Dhan App",
     category: ["landing pages"],
     image: "images/vinay/home.jpg",
     slug: "dhanApp",
   },
   {
-    id: 5,
+    id: 6,
     name: "Al-Huda University",
     category: ["websites"],
     image: "images/hudaUniversity/home.jpg",
     slug: "hudaUniversity",
   },
   {
-    id: 6,
+    id: 7,
     name: "Ajyal Landing Page and Dashboard",
     category: ["landing pages", "dashboards"],
     image: "images/ajyal/home.jpg",
     slug: "ajyal",
   },
   {
-    id: 7,
+    id: 8,
     name: "Email",
     category: ["email templates"],
     image: "images/email1/home.jpg",
     slug: "email1",
   },
   {
-    id: 8,
+    id: 9,
     name: "AL Maqal Landing Page",
     category: ["landing pages"],
     image: "images/moaql/home.jpg",
     slug: "al-maqal",
   },
   {
-    id: 9,
+    id: 10,
     name: "Krogarna Dashboard",
     category: ["dashboards"],
     image: "images/educationDash/home.jpg",
     slug: "educationDash",
   },
   {
-    id: 10,
+    id: 11,
     name: "Highnox Dashboard",
     category: ["dashboards"],
     image: "images/dashboardLearn/home.jpg",
     slug: "learnDash",
   },
   {
-    id: 11,
+    id: 12,
     name: "Al-sharq Feloowship Program",
     category: ["websites"],
     image: "images/education/home.jpg",
     slug: "al-sharq",
   },
   {
-    id: 12,
+    id: 13,
     name: "Dash",
     category: ["websites"],
     image: "images/dash/home.jpg",
     slug: "dash",
   },
   {
-    id: 13,
+    id: 14,
     name: "Kaitoss",
     category: ["landing pages"],
     image: "images/kaitos/home.jpg",
     slug: "kaitoss",
   },
   {
-    id: 14,
+    id: 15,
     name: "Yalla App",
     category: ["landing pages"],
     image: "images/menu/home.jpg",
     slug: "yalla",
   },
   {
-    id: 15,
+    id: 16,
     name: "TR-Pays Admin",
     category: ["websites"],
     image: "images/trPayAdmin/home.jpg",
     slug: "trPayAdmin",
   },
   {
-    id: 16,
+    id: 17,
     name: "Evaro",
     category: ["websites"],
     image: "images/evaro/home.jpg",
     slug: "evaro",
   },
   {
-    id: 17,
+    id: 18,
     name: "Saudi food & drog authority Dashboard",
     category: ["dashboards"],
     image: "images/product/home.jpg",
     slug: "product",
   },
   {
-    id: 18,
+    id: 19,
     name: "Lawyers Dashborad",
     category: ["dashboards"],
     image: "images/lawyer/home.jpg",
     slug: "lawyer",
   },
   {
-    id: 19,
+    id: 20,
     name: "ProShop E-commercial",
     category: ["websites"],
     image: "images/ecommercial/home.jpg",
     slug: "ecommercial",
   },
   {
-    id: 20,
+    id: 21,
     name: "Movies App",
     category: ["websites"],
     image: "images/movie/home.jpg",
     slug: "movie",
   },
   {
-    id: 21,
+    id: 22,
     name: "To Do App",
     category: ["websites"],
     image: "images/todo/home.jpg",
     slug: "todo",
   },
   {
-    id: 22,
+    id: 23,
     name: "Menu App",
     category: ["websites"],
     image: "images/menu1/home.jpg",
     slug: "menu",
   },
   {
-    id: 23,
+    id: 24,
     name: "Pringo",
     category: ["websites"],
     image: "images/website/home.jpg",
     slug: "pringo",
   },
   {
-    id: 24,
+    id: 25,
     name: "Email",
     category: ["email templates"],
     image: "images/email2/home.jpg",
@@ -233,11 +236,11 @@ function Portfolios2() {
       targetFilter !== filters[0].name.toLowerCase()
         ? allData.filter((data) => {
           console.log(targetFilter);
-            return (
-              data.category.includes(targetFilter) &&
-              data.id <= allData?.length - 1
-            );
-          })
+          return (
+            data.category.includes(targetFilter) &&
+            data.id <= allData?.length - 1
+          );
+        })
         : getAllItems.filter((data) => data.id <= dataVisibleCount);
     // console.log(dataFilter, tempData);
     // if (dataFilter?.length < 8 || tempData?.length == 0) {
