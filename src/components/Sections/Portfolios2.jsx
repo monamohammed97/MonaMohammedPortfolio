@@ -18,32 +18,40 @@ const allData = [
   { id: 18, name: "Saudi food & drug authority Dashboard", category: ["dashboards"], image: "images/product/home.jpg", slug: "product" },
   { id: 19, name: "Lawyers Dashboard", category: ["dashboards"], image: "images/lawyer/home.jpg", slug: "lawyer" },
   { id: 25, name: "Email", category: ["email templates"], image: "images/email2/home.jpg", slug: "email2" },
+  { id: 26, name: "Extra Project", category: ["websites"], image: "images/extra/home.jpg", slug: "extra" },
 ];
 
 function Portfolios2() {
   const [dataVisibleCount, setDataVisibleCount] = useState(8);
   const [activeFilter, setActiveFilter] = useState(filters[0].name.toLowerCase());
   const [visibleItems, setVisibleItems] = useState([]);
-  const [noMorePost, setNoMorePost] = useState(false);
+  const [showLoadMore, setShowLoadMore] = useState(false);
 
   useEffect(() => {
-    setVisibleItems(allData.slice(0, 8)); // عرض أول 8 عناصر عند تحميل الصفحة
+    updateFilteredItems(filters[0].name.toLowerCase());
   }, []);
+
+  const updateFilteredItems = (filter) => {
+    const filteredData =
+      filter === filters[0].name.toLowerCase()
+        ? allData
+        : allData.filter((item) => item.category.includes(filter));
+
+    if (filteredData.length <= 8) {
+      setVisibleItems(filteredData);
+      setShowLoadMore(false);
+    } else {
+      setVisibleItems(filteredData.slice(0, 8));
+      setShowLoadMore(true);
+    }
+  };
 
   const handleChange = (e) => {
     e.preventDefault();
     let targetFilter = e.target.textContent.toLowerCase();
-    
     setActiveFilter(targetFilter);
-    setDataVisibleCount(8); // إعادة ضبط العدد المعروض
-
-    let filteredData =
-      targetFilter === filters[0].name.toLowerCase()
-        ? allData.slice(0, 8)
-        : allData.filter((item) => item.category.includes(targetFilter)).slice(0, 8);
-
-    setVisibleItems(filteredData);
-    setNoMorePost(filteredData.length < 8);
+    setDataVisibleCount(8);
+    updateFilteredItems(targetFilter);
   };
 
   const handleLoadmore = (e) => {
@@ -51,13 +59,13 @@ function Portfolios2() {
     let tempCount = dataVisibleCount + 4;
     setDataVisibleCount(tempCount);
 
-    let moreItems =
+    const filteredData =
       activeFilter === filters[0].name.toLowerCase()
-        ? allData.slice(0, tempCount)
-        : allData.filter((item) => item.category.includes(activeFilter)).slice(0, tempCount);
+        ? allData
+        : allData.filter((item) => item.category.includes(activeFilter));
 
-    setVisibleItems(moreItems);
-    setNoMorePost(moreItems.length >= allData.filter((item) => item.category.includes(activeFilter)).length);
+    setVisibleItems(filteredData.slice(0, tempCount));
+    setShowLoadMore(tempCount < filteredData.length);
   };
 
   return (
@@ -82,7 +90,7 @@ function Portfolios2() {
         ))}
       </div>
 
-      {!noMorePost && (
+      {showLoadMore && (
         <div className="load-more text-center mt-4 fadeIn delay_ms_7">
           <a href="#!" className="btn btn-default" onClick={handleLoadmore}>
             <i className="fas fa-circle-notch"></i> Load more
