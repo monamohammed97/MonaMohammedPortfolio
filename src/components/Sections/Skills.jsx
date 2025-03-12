@@ -71,6 +71,10 @@ const skillData = {
       id: 16,
       name: "GitHub",
     },
+     {
+      id: 17,
+      name: "Tailwind Css",
+    },
   ],
 };
 
