@@ -19,7 +19,7 @@ function Herosection() {
             <span className="animation-variation">I</span>
             <span className="animation-variation">'m</span>
             <span> </span>
-            <span className="animation-variation fontCinzel">M</span>
+            <span className="animation-variation">M</span>
             <span className="animation-variation">o</span>
             <span className="animation-variation">n</span>
             <span className="animation-variation">a</span>
