@@ -343,6 +343,29 @@ section {
     @include transition(0.3s);
   }
 
+  .view-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: $colororange;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    font-size: 16px;
+    left: 60px;
+    bottom: 25px;
+    opacity: 0;
+    line-height: 32px;
+    text-align: center;
+    z-index: 1;
+    padding: 0 10px;
+    @include transition(0.3s);
+
+    span {
+      font-size: 12px;
+    }
+  }
+
   .mask {
     background: #7b5e74b0;
     position: absolute;
@@ -381,6 +404,10 @@ section {
     }
 
     .plus-icon {
+      opacity: 1;
+    }
+
+    .view-icon {
       opacity: 1;
     }
   }

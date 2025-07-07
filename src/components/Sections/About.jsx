@@ -5,7 +5,7 @@ const aboutData = {
   cvpath: "media/Frontend_Dev_Mona_Shaban.CV.pdf",
   image: "images/image.PNG",
   name: "Mona Mohammed",
-  location: "Palestine, Rafah",
+  location: "Palestine, Gaza",
   birthday: "30 Dec, 1997",
   email: "mona.moahmmed.shaban@gmail.com",
   aboutMe: `I am a front-end developer with an excellent experience in the field.`,

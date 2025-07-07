@@ -16,6 +16,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/lobox/home.jpg",
     slug: "lobox",
+    demoLink:"https://monamohammed97.github.io/Lob_Box/index.html"
   },
   {
     id: 2,

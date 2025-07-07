@@ -21,7 +21,7 @@ const headerData = {
 const contactData = {
   phone: ["+970 599 923 814"],
   email: ["mona.moahmmed.shaban@gmail.com"],
-  location: "Palestine, Gaza, Rafah",
+  location: "Palestine, Gaza",
 };
 
 function Contact() {
@@ -54,7 +54,7 @@ function Contact() {
     setError(false);
     emailjs
       .sendForm(
-        "service_063we7t",
+        "service_6p2lovj",
         "template_mkx7gn3",
         form.current,
         "3dx8YeaOh6nkop5dF"
