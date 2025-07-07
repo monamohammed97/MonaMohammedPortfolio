@@ -54,7 +54,7 @@ function Herosection() {
           <Link
             activeClass="active"
             to={{
-              pathname: "mailto:mona00mona1997@gmail.com",
+              pathname: "mailto:mona.moahmmed.shaban@gmail.com",
             }}
             spy={true}
             smooth={true}

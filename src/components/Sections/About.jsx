@@ -7,7 +7,7 @@ const aboutData = {
   name: "Mona Mohammed",
   location: "Palestine, Rafah",
   birthday: "30 Dec, 1997",
-  email: "mona00mona1997@gmail.com",
+  email: "mona.moahmmed.shaban@gmail.com",
   aboutMe: `I am a front-end developer with an excellent experience in the field.`,
   aboutMe1: ` I am always passionate about learning and undertaking new challenges, constantly evolving, and enjoying dealing with problems and solving them.
   .`,

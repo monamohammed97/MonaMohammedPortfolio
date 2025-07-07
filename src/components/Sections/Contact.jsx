@@ -20,7 +20,7 @@ const headerData = {
 };
 const contactData = {
   phone: ["+970 599 923 814"],
-  email: ["mona00mona1997@gmail.com"],
+  email: ["mona.moahmmed.shaban@gmail.com"],
   location: "Palestine, Gaza, Rafah",
 };
 
