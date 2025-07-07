@@ -1,6 +1,6 @@
 import React from "react";
 import TrackVisibility from "react-on-screen";
-import Skill from "../Items/Skill";
+// import Skill from "../Items/Skill";
 import { HiArrowCircleRight } from "react-icons/hi";
 const skillData = {
   skillContent:

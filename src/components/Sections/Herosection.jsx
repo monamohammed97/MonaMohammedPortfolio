@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 // import { Link as Link } from "react-scroll";
 
-const herosectionData = {
-  aboutMe:
-    "He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
-};
+// const herosectionData = {
+//   aboutMe:
+//     "He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+// };
 
 function Herosection() {
   return (
