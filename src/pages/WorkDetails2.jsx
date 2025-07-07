@@ -49,7 +49,7 @@ function WorkDetails2(props) {
               <i className="icon-calendar"></i>
               {meta.date}
             </li>
-            <li className="list-inline-item">
+            <li className="list-inline-item link-view">
               <Link
                 to={{ pathname: meta?.link }}
                 target="_blank"
@@ -59,7 +59,7 @@ function WorkDetails2(props) {
               </Link>
             </li>
             {meta?.link2 && (
-              <li className="list-inline-item">
+              <li className="list-inline-item link-view">
                 <Link
                   to={{ pathname: meta?.link2 }}
                   target="_blank"

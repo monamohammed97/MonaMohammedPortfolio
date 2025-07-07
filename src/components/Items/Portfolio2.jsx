@@ -13,12 +13,12 @@ function Portfolio({ portfolio: { id, name, category, image, slug, demoLink } })
           <span className="term">{category.join(",  ")}</span>
         </div>
         <span className="plus-icon">+</span>
-        <Link to={demoLink}  onClick={(e) => {
+        <a href={demoLink} target="_blank"  onClick={(e) => {
           e.stopPropagation(); 
         }} className="view-icon">
           <span>Live Preview </span>
           <TbLocationShare />
-        </Link>
+        </a>
 
         <div className="thumb">
           <img src={image} alt={name} loading="lazy" />

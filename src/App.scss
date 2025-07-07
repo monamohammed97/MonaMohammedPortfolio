@@ -39,13 +39,16 @@ Description: Personal Portfolio & Resume HTML Template
 
 .demosection {
   border-radius: 0;
+
   .overlay {
     border-radius: 0;
   }
+
   &.herosection {
     padding: 100px 0;
   }
 }
+
 .demo-content {
   position: relative;
   z-index: 99;
@@ -76,6 +79,7 @@ Description: Personal Portfolio & Resume HTML Template
 .demoitems {
   padding: 100px 0;
   text-align: center;
+
   h2 {
     margin-bottom: 0;
     margin-top: 0;
@@ -90,6 +94,7 @@ Description: Personal Portfolio & Resume HTML Template
     border-radius: 15px;
     overflow: hidden;
   }
+
   h4 {
     margin-bottom: 0;
   }
@@ -97,4 +102,50 @@ Description: Personal Portfolio & Resume HTML Template
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.link-view {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 4px;
+  color: $colorpink;
+  font-weight: bold;
+  animation: arrowMove 4s ease-in-out infinite;
+
+}
+
+.link-view::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #A4849C;
+  transition: width 0.4s ease;
+}
+
+.link-view:hover::after {
+  width: 100%;
+}
+
+@keyframes arrowMove {
+
+  0%,
+  60% {
+    transform: translateX(0);
+  }
+
+  70% {
+    transform: translateX(4px);
+  }
+
+  80% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

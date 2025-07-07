@@ -24,6 +24,7 @@ const allData = [
     category: ["websites"],
     image: "images/rssa/home.jpg",
     slug: "rssa",
+    demoLink:"https://rssa-monamohammed23.vercel.app/"
   },
   {
     id: 3,
@@ -31,6 +32,7 @@ const allData = [
     category: ["dashboards"],
     image: "images/trPay/home.jpg",
     slug: "trPayUser",
+    demoLink:"https://tr-payuser-monamohammed23.vercel.app/"
   },
   {
     id: 4,
@@ -38,6 +40,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/marthon/home.jpg",
     slug: "marthon",
+    demoLink:"https://marathon-khaki.vercel.app/"
   },
   {
     id: 5,
@@ -45,6 +48,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/vinay/home.jpg",
     slug: "dhanApp",
+    demoLink:"https://monamohammed97.github.io/Vinay/"
   },
   {
     id: 6,
@@ -52,6 +56,7 @@ const allData = [
     category: ["websites"],
     image: "images/hudaUniversity/home.jpg",
     slug: "hudaUniversity",
+    demoLink: "https://huda-university-monamohammed23.vercel.app/"
   },
   {
     id: 7,
@@ -59,6 +64,7 @@ const allData = [
     category: ["landing pages", "dashboards"],
     image: "images/ajyal/home.jpg",
     slug: "ajyal",
+    demoLink: "https://ajyal.ps/"
   },
   {
     id: 8,
@@ -66,6 +72,7 @@ const allData = [
     category: ["email templates"],
     image: "images/email1/home.jpg",
     slug: "email1",
+    demoLink: "https://email-template-monamohammed23.vercel.app/"
   },
   {
     id: 9,
@@ -73,6 +80,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/moaql/home.jpg",
     slug: "al-maqal",
+    demoLink: "https://monamohammed97.github.io/homepage/?fbclid=IwAR3O4wzzNeiIqw89KTZHzpMyLveHjGUneS0yl-djzmoUUYWiJTvyMpx-XFk"
   },
   {
     id: 10,
@@ -80,6 +88,7 @@ const allData = [
     category: ["dashboards"],
     image: "images/educationDash/home.jpg",
     slug: "educationDash",
+    demoLink: "https://login-eight-taupe.vercel.app/"
   },
   {
     id: 11,
@@ -87,6 +96,7 @@ const allData = [
     category: ["dashboards"],
     image: "images/dashboardLearn/home.jpg",
     slug: "learnDash",
+    demoLink: "https://dashboard-seven-lilac.vercel.app/"
   },
   {
     id: 12,
@@ -94,6 +104,7 @@ const allData = [
     category: ["websites"],
     image: "images/education/home.jpg",
     slug: "al-sharq",
+    demoLink: "https://al-sharq-monamohammed23.vercel.app/"
   },
   {
     id: 13,
@@ -101,6 +112,7 @@ const allData = [
     category: ["websites"],
     image: "images/dash/home.jpg",
     slug: "dash",
+    demoLink: "https://dash-saudi.vercel.app/"
   },
   {
     id: 14,
@@ -108,6 +120,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/kaitos/home.jpg",
     slug: "kaitoss",
+    demoLink: "https://monamohammed97.github.io/MonaShabanKaitoss/"
   },
   {
     id: 15,
@@ -115,6 +128,7 @@ const allData = [
     category: ["landing pages"],
     image: "images/menu/home.jpg",
     slug: "yalla",
+    demoLink: "https://monamohammed97.github.io/landingPage/?fbclid=IwAR0IQAPD5ES-SHpe-G7g2rQo-7zt84_OzdBlFPhnNJ-O0RKZmhd69IWr4k8"
   },
   {
     id: 16,
@@ -122,6 +136,7 @@ const allData = [
     category: ["websites"],
     image: "images/trPayAdmin/home.jpg",
     slug: "trPayAdmin",
+    demoLink: "https://dashborad-tr-pay-monamohammed23.vercel.app/"
   },
   {
     id: 17,
@@ -129,6 +144,7 @@ const allData = [
     category: ["websites"],
     image: "images/evaro/home.jpg",
     slug: "evaro",
+    demoLink: "https://evaro.vercel.app/"
   },
   {
     id: 18,
@@ -136,6 +152,7 @@ const allData = [
     category: ["dashboards"],
     image: "images/product/home.jpg",
     slug: "product",
+    demoLink: "https://dashboard-m-monamohammed23.vercel.app/"
   },
   {
     id: 19,
@@ -143,6 +160,7 @@ const allData = [
     category: ["dashboards"],
     image: "images/lawyer/home.jpg",
     slug: "lawyer",
+    demoLink: "https://dashboard-lawyer-monamohammed23.vercel.app/"
   },
   {
     id: 20,
@@ -150,6 +168,7 @@ const allData = [
     category: ["websites"],
     image: "images/ecommercial/home.jpg",
     slug: "ecommercial",
+    demoLink: "https://e-commercial-monamohammed23.vercel.app/"
   },
   {
     id: 21,
@@ -157,6 +176,7 @@ const allData = [
     category: ["websites"],
     image: "images/movie/home.jpg",
     slug: "movie",
+    demoLink: "https://movies-app-main-monamohammed23.vercel.app/"
   },
   {
     id: 22,
@@ -164,6 +184,7 @@ const allData = [
     category: ["websites"],
     image: "images/todo/home.jpg",
     slug: "todo",
+    demoLink: "https://to-do-list-git-main-monamohammed23.vercel.app/"
   },
   {
     id: 23,
@@ -171,6 +192,7 @@ const allData = [
     category: ["websites"],
     image: "images/menu1/home.jpg",
     slug: "menu",
+    demoLink: "https://monamohammed97.github.io/MenuProject/?fbclid=IwAR2bMwc5O9ZuZKQ42LkJw7cawoh6_rYDcsj86yBIBSHEwGlsUcVpFukYtd0"
   },
   {
     id: 24,
@@ -178,6 +200,7 @@ const allData = [
     category: ["websites"],
     image: "images/website/home.jpg",
     slug: "pringo",
+    demoLink: "https://website-monamohammed23.vercel.app/"
   },
   {
     id: 25,
@@ -185,6 +208,7 @@ const allData = [
     category: ["email templates"],
     image: "images/email2/home.jpg",
     slug: "email2",
+    demoLink: "https://mona-email.vercel.app/"
   },
 ];
 
