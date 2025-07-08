@@ -286,6 +286,10 @@ section {
   background-color: #A4849C;
   min-height: 200px;
 
+  span {
+    font-weight: bold
+  }
+
   @include transition(0.3s);
 
   .thumb {
