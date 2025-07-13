@@ -37,41 +37,41 @@ function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useRef();
   const submitHandler = (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  if (!formdata.name) {
-    setError(true);
-    setMessage("Name is required");
-  } else if (!formdata.email) {
-    setError(true);
-    setMessage("Email is required");
-  } else if (!formdata.subject) {
-    setError(true);
-    setMessage("Subject is required");
-  } else if (!formdata.message) {
-    setError(true);
-    setMessage("Message is required");
-  } else {
-    setError(false);
-    setIsSubmitting(true);
-    emailjs
-      .sendForm(
-        "service_6p2lovj",
-        "template_mkx7gn3",
-        form.current,
-        "3dx8YeaOh6nkop5dF"
-      )
-      .then(() => {
-        setMessage("Your message has been sent!!!");
-        setFormdata({ name: "", email: "", subject: "", message: "" }); // تفريغ الحقول بعد الإرسال
-        setIsSubmitting(false);
-      })
-      .catch((error) => {
-        setError(true);
-        setMessage("Failed to send message. Please try again.");
-      });
-  }
-};
+    if (!formdata.name) {
+      setError(true);
+      setMessage("Name is required");
+    } else if (!formdata.email) {
+      setError(true);
+      setMessage("Email is required");
+    } else if (!formdata.subject) {
+      setError(true);
+      setMessage("Subject is required");
+    } else if (!formdata.message) {
+      setError(true);
+      setMessage("Message is required");
+    } else {
+      setError(false);
+      setIsSubmitting(true);
+      emailjs
+        .sendForm(
+          "service_6p2lovj",
+          "template_mkx7gn3",
+          form.current,
+          "3dx8YeaOh6nkop5dF"
+        )
+        .then(() => {
+          setMessage("Your message has been sent !");
+          setFormdata({ name: "", email: "", subject: "", message: "" }); // تفريغ الحقول بعد الإرسال
+          setIsSubmitting(false);
+        })
+        .catch((error) => {
+          setError(true);
+          setMessage("Failed to send message. Please try again.");
+        });
+    }
+  };
 
   const handleChange = (event) => {
     setFormdata({
@@ -96,7 +96,7 @@ function Contact() {
         setError(false);
       }, 3000);
 
-      return () => clearTimeout(timer); 
+      return () => clearTimeout(timer);
     }
   }, [message]);
   return (
@@ -190,7 +190,13 @@ function Contact() {
             name="submit"
             value="Submit"
             className="btn btn-default fadeIn delay_ms_9"
-            disabled={isSubmitting}
+            disabled={
+              isSubmitting ||
+              !formdata.name.trim() ||
+              !formdata.email.trim() ||
+              !formdata.subject.trim() ||
+              !formdata.message.trim()
+            }
           >
             <i className="icon-paper-plane"></i>
             {isSubmitting ? "Sending..." : "Send Message"}
