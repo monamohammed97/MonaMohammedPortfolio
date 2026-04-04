@@ -10,7 +10,7 @@ import {
 const headerData = {
   name: "Mona Mohammed",
   designation: "Web Developer",
-  imageThumb: "/images/MonaP.PNG",
+  imageThumb: "/images/MonaP.png",
   social: {
     facebook: "https://www.facebook.com/monamohammedshaban97/",
     twitter: "https://twitter.com/moona97mohammed",
