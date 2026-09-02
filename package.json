@@ -1,6 +1,9 @@
 {
   "name": "mona",
   "version": "1.0.0",
+  "engines": {
+    "node": "24.x"
+  },
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -52,5 +55,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
